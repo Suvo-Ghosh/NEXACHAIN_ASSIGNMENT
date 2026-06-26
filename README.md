@@ -27,14 +27,14 @@ The platform allows users to:
 - Track active investments
 - View investment history
 
-### 📈 Automated Daily ROI Distribution
+### Automated Daily ROI Distribution
 
 - Daily ROI calculated using `node-cron`
 - Runs automatically every midnight
 - MongoDB ACID Transactions
 - Strict Idempotency to prevent duplicate credits
 
-### 🤝 Multi-Level Referral System
+### Multi-Level Referral System
 
 Automatic referral commission distribution:
 
@@ -44,7 +44,7 @@ Automatic referral commission distribution:
 | Level 2 | 3% |
 | Level 3 | 1% |
 
-### 📊 Interactive Dashboard
+### Interactive Dashboard
 
 - Wallet Balance
 - Total Investments
@@ -55,7 +55,7 @@ Automatic referral commission distribution:
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -80,7 +80,7 @@ Automatic referral commission distribution:
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 NexaChain-AI/
@@ -107,7 +107,7 @@ NexaChain-AI/
 
 ---
 
-# ⚙️ Environment Variables
+# Environment Variables
 
 ## Backend (`/backend/.env`)
 
@@ -129,7 +129,7 @@ VITE_BACKEND_URL=http://localhost:5000/api
 
 ---
 
-# 💻 Installation
+# Installation
 
 ## Prerequisites
 
@@ -186,7 +186,7 @@ http://localhost:5173
 
 ---
 
-# 📖 API Documentation
+# API Documentation
 
 All APIs are prefixed with:
 
@@ -202,7 +202,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## 🔐 Authentication APIs
+## Authentication APIs
 
 | Method | Endpoint | Description | Access |
 |---------|----------|-------------|--------|
@@ -212,7 +212,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## 💰 Investment APIs
+## Investment APIs
 
 | Method | Endpoint | Description | Access |
 |---------|----------|-------------|--------|
@@ -222,7 +222,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## 🤝 Referral APIs
+## Referral APIs
 
 | Method | Endpoint | Description | Access |
 |---------|----------|-------------|--------|
@@ -232,7 +232,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## 📈 ROI APIs
+## ROI APIs
 
 | Method | Endpoint | Description | Access |
 |---------|----------|-------------|--------|
@@ -240,7 +240,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-# 🔄 Daily ROI Scheduler
+# Daily ROI Scheduler
 
 The application includes an automated scheduler using **node-cron**.
 
@@ -255,7 +255,7 @@ It:
 
 ---
 
-# 🔒 Security Features
+# Security Features
 
 - JWT Authentication
 - Password Hashing
@@ -267,7 +267,7 @@ It:
 
 ---
 
-# 🤔 Assumptions
+# Assumptions
 
 ### Referral Levels
 
@@ -353,7 +353,7 @@ This preserves:
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 Developed as part of the **NexaChain AI Developer Technical Assessment**.
 
