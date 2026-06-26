@@ -1,0 +1,129 @@
+{
+  "info": {
+    "_postman_id": "8724ef7c-7770-49dc-bbe0-6e22bde1bb38",
+    "name": "NEXCA_CHAIN",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44796316",
+    "_collection_link": "https://go.postman.co/collection/44796316-8724ef7c-7770-49dc-bbe0-6e22bde1bb38?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fullName\": \"Jit Ghosh\",\r\n  \"email\": \"jit123@example.com\",\r\n  \"mobileNumber\": \"+919876543210\",\r\n  \"password\": \"Password123\",\r\n  \"referredByCode\": \"\" \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"jit123@example.com\",\r\n  \"password\": \"Password123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Investment",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhM2ExYjhmNjUxNTQwZGQwZTI3OGQwOSIsImlhdCI6MTc4MjE5MzM4NCwiZXhwIjoxNzg0Nzg1Mzg0fQ.Icbkf-phpEOVfcYICWXbbovVmA8DOoRVlguwgeAdGtw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"investmentAmount\": 1000,\r\n  \"planDetails\": \"Gold Starter Plan\",\r\n  \"durationInDays\": 30,\r\n  \"dailyRoiPercentage\": 1.5\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/investments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "investments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard Data",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "DirectReferral",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Referral Tree",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
