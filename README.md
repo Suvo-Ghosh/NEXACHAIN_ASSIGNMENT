@@ -141,9 +141,9 @@ VITE_BACKEND_URL=http://localhost:5000/api
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/nexachain-ai.git
+git clone https://github.com/Suvo-Ghosh/NEXACHAIN_ASSIGNMENT.git
 
-cd nexachain-ai
+cd NEXACHAIN_ASSIGNMENT
 ```
 
 ---
